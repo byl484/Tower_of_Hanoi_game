@@ -1,0 +1,40 @@
+Ohjelma on peli nimeltä hanoin torin.
+Pelissä on tarkoitus siirtää punaisessa tolpassa
+olevat kiekot toiseen tyhjistä tolpista, jotka
+ovat tässä versiossa vihreä ja sininen. Pelin voittaa, kun kaikki kiekot ovat
+jommassa kummassa tolpassa. Ohjelma ilmoittaa, kun pelin on voittanut.
+
+Kiekkoja saa liikutella seuraavalla tavalla:
+Tolpasta saa ottaa pelkästään ylimmän kiekon pois ja siirtää sen johonkin toiseen tolppaan.
+Kiekot ovat erikokoisia. Suurempaa kiekkoa ei voi laittaa pienemmmän päälle.
+Tämä ohjelma estää sääntöjen vastaiset siirrot poistamalla niitä vastaavat napit käytöstä.
+Aloitustilanteessa kaikki kiekot ovat sääntöjen mukaisesti yhdessä tornissa.
+
+Ohjelman toiminta:
+Ohjelma aloittaa oletuksena pelin kuudella kiekolla. Kiekkojen määrää voi itse
+säätää kahdesta kolmeenkymmeneen (2-30). Säädön vahvistusnappi aloittaa uuden pelin
+sillä määrällä kiekkoja, joka säätimessä on asetettuna. Jos säätimessä on kuitenkin
+sama määrä kiekkoja kuin nykyisessä pelissä, nappi ei tee mitään. Jos haluat aloittaa pelin
+alusta samalla määrällä kiekkoja, paina reset-nappulaa.
+
+
+Jokaiselle siirrolle on oma nappinsa:
+Punainen (vasen)tolppa on napeissa A-tolppa.
+Vihreä (keski)tolppa on napeissa B-tolppa.
+Sininen (oikea)tolppa on napeissa C-tolppa.
+
+Napeissa nuoli lähtee siitä tolpasta, josta kiekko otetaan
+ja osoittee siihen tolppaa, johon kiekko siirretään.
+
+Lisäominaisuudet:
+
+Ohjelma myös laskee kullakin kiekkomäärällä minimimäärän siirtoja pelin voittamiseen ja
+pitää kirjaa siitä, kuinka monta siirtoa on tehty ja kuinka monta siirto on jäljellä, että
+minimisiirtojen määrä täyttyy. Jos määrä täyttyy, lukema menee negatiiviseksi, jolloin sama
+laskuri näyttää kuinka monta ylimääräistä siirtoa on tehty.
+
+Ohjelmassa on reset-nappi, jolla pelin voi aloittaa alusta samalla kiekkomäärällä kuin
+mikä nykyisessä pelissä on käytössä.
+
+Ohjelmassa voi myös antaa komennon levyn liikuttamiseksi käyttöliittymän nappien lisäksi liikutuskomennon
+näppäimistön numeronäppäinten (1-6 )avulla. Numeronäppäimet on numeroitu käyttöliittymään.

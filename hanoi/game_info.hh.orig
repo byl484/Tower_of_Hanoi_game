@@ -1,0 +1,47 @@
+#ifndef GAME_HH
+#define GAME_HH
+#include <vector>
+#include "disk.hh"
+#include <math.h>
+
+
+
+class Game_info
+{
+public:
+    Game_info(int amount_of_disks);
+    int get_height();
+    int get_current_disk_width();
+    int get_min_moves();
+
+    void change_current_disk_width();
+    void calc_disk_height();
+    void calc_decrease_width();
+
+
+
+
+private:
+    int amount_of_disks_;
+    int disk_height_;
+    int current_disk_width_;
+    int decrease_width_;
+    int min_moves_to_win_;
+
+};
+
+#endif // GAME_HH
+
+
+/*
+ *
+ *
+        int disk_y_coord = (BORDER_DOWN-current_game.get_height())-1-running_numb*current_game.get_height();
+        int width_of_the_current_disk = current_game.get_current_disk_width();
+
+        disk = new Disk(POLE_LEFT,amount_disks,disk_height,width_of_the_current_disk,Qt::red);
+        pole_left.push_back(disk);
+        create_disk(disk,POLE_LEFT-disk->get_width()/2+4,disk_y_coord);
+        current_game.change_current_disk_width();
+        ++running_numb;
+*/
