@@ -1,2 +1,2 @@
-# Tower_of_Hanoi_game
+# Tower of Hanoi
 ![](hanoi/hanoi_ss.png)
